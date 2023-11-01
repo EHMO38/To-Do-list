@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="conteudo">
+        <div class="topo">
+            <input type="text" id="nova-tarefa" placeholder="adicione uma nova tarefa">
+            <button id="btnAddTarefa">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+
+        <ul id="lista-tarefas">
+            
+        </ul>
+    </div>
+    
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idTarefaEdicao">#1201</h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="nomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="atualizarTarefa">
+                    Salvar
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
